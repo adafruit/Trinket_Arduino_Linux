@@ -11,14 +11,14 @@ Trinket/Pro Trinket/Gemma/Flora on Linux.
     execute:
 
         cd ~
-        wget 
+        wget https://github.com/adafruit/Trinket_Arduino_Linux/raw/master/trinket-arduino-1.0.5-linux64.tgz
         tar xvfz trinket-arduino-1.0.5-linux64.tgz
 
 2.  Install the udev rule to support programming the boards as a non-root user.
     See step 4 of the manual installation step below for more information, but
     on Ubuntu execute these commands:
 
-        wget 
+        wget https://github.com/adafruit/Trinket_Arduino_Linux/raw/master/adafruit-trinket.rules
         sudo cp adafruit-trinket.rules /etc/udev/rules.d/
         sudo reload udev
 

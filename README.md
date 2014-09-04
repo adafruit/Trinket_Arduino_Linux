@@ -23,7 +23,7 @@ Trinket/Pro Trinket/Gemma/Flora on Linux.
         sudo reload udev
 
 3.  Run the Arduino IDE downloaded in step 1!  See step 5 of the manual installation
-    steps below for more information how programming boards.
+    steps below for more information on programming boards.
 
 ## Manual Installation
 

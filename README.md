@@ -3,7 +3,29 @@
 Configuration files for modifying the official Arduino IDE to program 
 Trinket/Pro Trinket/Gemma/Flora on Linux.
 
-## Installation
+## Easy Installation
+
+1.  Download one of the modified Arduino IDE archives in the master branch of this
+    repository, unpack it, and run the Arduino IDE.  For example to install the
+    64 bit version of the modified Arduino 1.0.5 IDE in your home directory
+    execute:
+
+        cd ~
+        wget 
+        tar xvfz trinket-arduino-1.0.5-linux64.tgz
+
+2.  Install the udev rule to support programming the boards as a non-root user.
+    See step 4 of the manual installation step below for more information, but
+    on Ubuntu execute these commands:
+
+        wget 
+        sudo cp adafruit-trinket.rules /etc/udev/rules.d/
+        sudo reload udev
+
+3.  Run the Arduino IDE downloaded in step 1!  See step 5 of the manual installation
+    steps below for more information how programming boards.
+
+## Manual Installation
 
 1.  Switch to a branch of this repository with the same version as the Arduino
     IDE you will modify.  For example to clone this repository for Arduino 1.0.5

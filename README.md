@@ -38,7 +38,10 @@ Trinket/Pro Trinket/Gemma/Flora on Linux.
     Arduino IDE downloaded in step 2 execute:
 
         cd ~
-        cp -rf ./Trinket_Arduino_Linux/arduino-1.0.5/ ./arduino-1.0.5/
+        cp -rf ./Trinket_Arduino_Linux/arduino-1.0.5/. ./arduino-1.0.5/.
+    
+    Be careful to copy the command above exactly!  The slashes and periods at the
+    end of the paths are required to make the copy work as expected.
 
 4.  Finally install the included adafruit-trinket.rules udev file to allow you
     to run the Arduino IDE and program over USB as a non-root user.  Note that

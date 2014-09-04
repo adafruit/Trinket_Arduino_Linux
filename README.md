@@ -5,14 +5,19 @@ Trinket/Pro Trinket/Gemma/Flora on Linux.
 
 ## Easy Installation
 
-1.  Download one of the modified Arduino IDE archives in the master branch of this
-    repository, unpack it, and run the Arduino IDE.  For example to install the
-    64 bit version of the modified Arduino 1.0.5 IDE in your home directory
-    execute:
+1.  Download one of the modified Arduino IDE archives, unpack it, and run the 
+    Arduino IDE.  For example to install the 64 bit version of the modified 
+    Arduino 1.0.5 IDE in your home directory execute:
 
         cd ~
-        wget https://github.com/adafruit/Trinket_Arduino_Linux/raw/master/trinket-arduino-1.0.5-linux64.tgz
+        wget http://adafruit-download.s3.amazonaws.com/trinket-arduino-1.0.5-linux64.tgz
         tar xvfz trinket-arduino-1.0.5-linux64.tgz
+    
+    Or to install the 32 bit version of the modified Arduino 1.0.5 IDE execute:
+    
+        cd ~
+        wget http://adafruit-download.s3.amazonaws.com/trinket-arduino-1.0.5-linux32.tgz
+        tar xvfz trinket-arduino-1.0.5-linux32.tgz
 
 2.  Install the udev rule to support programming the boards as a non-root user.
     See step 4 of the manual installation step below for more information, but

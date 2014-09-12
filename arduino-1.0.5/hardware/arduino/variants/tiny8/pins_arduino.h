@@ -30,6 +30,11 @@
 
 #include <avr/pgmspace.h>
 
+// Defines to make D4 support PWM
+// See for more info: http://forums.adafruit.com/viewtopic.php?f=52&t=43951
+#define TCCR1A GTCCR
+#define WGM10  PWM1B
+
 // ATMEL ATTINY45 / ARDUINO
 //
 //                  +-\/-+
@@ -92,7 +97,7 @@ const uint8_t PROGMEM digital_pin_to_timer_PGM[] = {
 	TIMER0B,
 	NOT_ON_TIMER,
 	NOT_ON_TIMER,
-	NOT_ON_TIMER,
+	TIMER1B,
 	NOT_ON_TIMER,
 };
 

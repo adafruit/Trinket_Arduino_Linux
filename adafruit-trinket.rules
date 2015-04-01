@@ -1,8 +1,0 @@
-# udev rule to make Trinket/Pro Trinket/Gemma/Flora programmable without running Arduino as root.
-# Tested with Ubuntu 14.04 and 12.04.  Other distributions might need to update GROUP="dialout"
-# to another group value like "users".
-# Copy this file to the location of your distribution's udev rules, for example on Ubuntu:
-#  sudo cp adafruit-trinket.rules /etc/udev/rules.d/
-# Then reload udev configuration by executing:
-#  sudo reload udev
-SUBSYSTEM=="usb", ATTR{idProduct}=="0c9f", ATTRS{idVendor}=="1781", MODE="0660", GROUP="dialout"

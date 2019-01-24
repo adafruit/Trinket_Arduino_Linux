@@ -1,4 +1,10 @@
-# Trinket Arduino IDE Configuration for Linux
+# Deprecated
+We no longer do this manually - instead please install using the board package manager 
+https://learn.adafruit.com/introducing-trinket
+
+
+
+## Trinket Arduino IDE Configuration for Linux
 
 Configuration files for modifying the official Arduino IDE to program 
 Trinket/Pro Trinket/Gemma/Flora on Linux.
